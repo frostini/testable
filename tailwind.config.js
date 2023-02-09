@@ -35,6 +35,8 @@ module.exports = {
         '6xl': '5rem',
       },
       fontFamily: {
+        'perfect': ['League Script', 'cursive'],
+        'brand': ['Raleway', ...defaultTheme.fontFamily.sans],
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
         display: ['Cabinet Grotesk', ...defaultTheme.fontFamily.sans],
       },

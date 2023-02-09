@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url(https://fonts.googleapis.com/css?family=Lato:900,400italic);
+/* @import url(https://fonts.googleapis.com/css?family=Lato:900,400italic); */
+/* @import url('https://fonts.googleapis.com/css2?family=League+Script&family=Raleway:wght@300;400&display=swap'); */
 /* .frame {
   position: relative;
   top: 50%;
@@ -52,7 +53,7 @@
   position: absolute;
   width: 10px;
   top: -1px;
-  right: 5px;
+  right: 15px;
   bottom: -1px;
   border-radius: 1px;
   box-shadow: -1px 0px 1px 0 rgba(0, 0, 0, 0.4);
@@ -60,11 +61,11 @@
   background: linear-gradient(to right, #a90329 0%, #8e0028 12%, #a90329 25%, #8e0028 37%, #a90329 50%, #8e0028 62%, #a90329 75%, #8e0028 87%, #a90329 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#a90329", endColorstr="#a90329",GradientType=1 );
 }
-.book .title {
+/* .book .title {
   position: absolute;
   top: 55px;
   left: 33px;
-}
+} */
 /* .book .title .big {
   font-size: 1.5rem;
   line-height: 100%;

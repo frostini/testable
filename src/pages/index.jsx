@@ -11,6 +11,7 @@ import { Screencasts } from '@/components/Screencasts'
 import { TableOfContents } from '@/components/TableOfContents'
 import { Testimonial } from '@/components/Testimonial'
 import { Testimonials } from '@/components/Testimonials'
+import { Categories } from '@/components/Categories'
 import avatarImage1 from '@/images/avatars/avatar-1.png'
 import avatarImage2 from '@/images/avatars/avatar-2.png'
 
@@ -32,6 +33,18 @@ export default function Home() {
       <TableOfContents />
       <Testimonial
         id="testimonial-from-tommy-stroman"
+        author={{
+          name: 'Alyson K.',
+          role: 'general surgery applicant USIMG (matched)',
+        }}
+      >
+        <p>
+          “Before writing my personal statement, my professional writer really got to know me over the phone and e-mail. He spent time looking at my CV/resume and learned all about me with his insightful interview questions. He helped me find the right words to express myself. I really ended up with the perfect personal statement—thanks PPS!”
+        </p>
+      </Testimonial>
+      <Categories/>
+      <Testimonial
+        id="testimonial-from-tommy-stromaan"
         author={{
           name: 'Alyson K.',
           role: 'general surgery applicant USIMG (matched)',

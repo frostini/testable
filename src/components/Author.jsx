@@ -43,10 +43,10 @@ export function Author() {
 
     {/* <div className="bg-white"> */}
       <div className="mx-auto max-w-7xl py-16 px-6 lg:py-24 lg:px-8">
-        <div className="divide-y-2 divide-gray-200">
-          <div className="lg:grid lg:grid-cols-3 lg:gap-4 sm:gap-x-12">
+        <div className="divide-gray-200">
+          {/* <div className="lg:grid lg:grid-cols-3 lg:gap-4 sm:gap-x-12"> */}
             {/* <div className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:col-span-2 lg:mt-0"> */}
-              <div className="mt-10 lg:mt-0">
+              {/* <div className="mt-10 lg:mt-0">
                 <h3 className="text-lg font-medium leading-6 text-gray-900">Address</h3>
                 <dl className="mt-2 text-base text-gray-500">
                   <div>
@@ -58,7 +58,7 @@ export function Author() {
                     <dd>Chula Vista, CA 91921</dd>
                   </div>
                 </dl>
-              </div>
+              </div> */}
               <div className="mt-10 lg:mt-0">
                 <h3 className="text-lg font-medium leading-6 text-gray-900">Email</h3>
                 <dl className="mt-2 text-base text-gray-500">
@@ -68,7 +68,7 @@ export function Author() {
                   </div>
                 </dl>
               </div>
-              <div className="mt-10 lg:mt-0">
+              {/* <div className="mt-10 lg:mt-0">
                 <h3 className="text-lg font-medium leading-6 text-gray-900">Phone Number</h3>
                 <dl className="mt-2 text-base text-gray-500">
                   <div>
@@ -76,9 +76,9 @@ export function Author() {
                     <dd>+1 (858) 777-9743</dd>
                   </div>
                 </dl>
-              </div>
+              </div> */}
             {/* </div> */}
-          </div>
+          {/* </div> */}
         </div>
       </div>
     {/* </div> */}

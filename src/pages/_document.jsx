@@ -23,6 +23,9 @@ export default function Document() {
           rel="stylesheet"
           href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,700&display=swap"
         />
+
+        <link href="https://fonts.googleapis.com/css2?family=League+Script&family=Raleway:wght@200;700&display=swap" rel="stylesheet"></link>
+
       </Head>
       <body>
         <Main />

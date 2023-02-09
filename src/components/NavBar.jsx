@@ -13,6 +13,7 @@ const sections = [
       </>
     ),
   },
+  { id: 'programs', title: 'Programs' },
   { id: 'services', title: 'Services' },
   { id: 'examples', title: 'Examples' },
   { id: 'contact', title: 'Contact' },
