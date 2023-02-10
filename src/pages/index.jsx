@@ -39,7 +39,7 @@ export default function Home() {
         }}
       >
         <p>
-          “Before writing my personal statement, my professional writer really got to know me over the phone and e-mail. He spent time looking at my CV/resume and learned all about me with his insightful interview questions. He helped me find the right words to express myself. I really ended up with the perfect personal statement—thanks PPS!”
+        &#34;Before writing my personal statement, my professional writer really got to know me over the phone and e-mail. He spent time looking at my CV/resume and learned all about me with his insightful interview questions. He helped me find the right words to express myself. I really ended up with the perfect personal statement—thanks PPS!&#34;
         </p>
       </Testimonial>
       <Categories/>
@@ -51,7 +51,7 @@ export default function Home() {
         }}
       >
         <p>
-          “Before writing my personal statement, my professional writer really got to know me over the phone and e-mail. He spent time looking at my CV/resume and learned all about me with his insightful interview questions. He helped me find the right words to express myself. I really ended up with the perfect personal statement—thanks PPS!”
+        &#34;Before writing my personal statement, my professional writer really got to know me over the phone and e-mail. He spent time looking at my CV/resume and learned all about me with his insightful interview questions. He helped me find the right words to express myself. I really ended up with the perfect personal statement—thanks PPS!&#34;
         </p>
       </Testimonial>
       <Resources />
@@ -64,7 +64,7 @@ export default function Home() {
         }}
       >
         <p>
-        "Lance with PPS is a really good listener. He has a lot of experience with personal statement materials and suggested helpful ideas that I never thought of. He helped me better understand my love of internal medicine and helped me put this love into words. Best experience!"
+        &#34;Lance with PPS is a really good listener. He has a lot of experience with personal statement materials and suggested helpful ideas that I never thought of. He helped me better understand my love of internal medicine and helped me put this love into words. Best experience!&#34;
         </p>
       </Testimonial>
       <FreeChapters />
@@ -76,7 +76,7 @@ export default function Home() {
         }}
       >
         <p>
-        "Lance with PPS is a really good listener. He has a lot of experience with personal statement materials and suggested helpful ideas that I never thought of. He helped me better understand my love of internal medicine and helped me put this love into words. Best experience!"
+        &#34;Lance with PPS is a really good listener. He has a lot of experience with personal statement materials and suggested helpful ideas that I never thought of. He helped me better understand my love of internal medicine and helped me put this love into words. Best experience!&#34;
         </p>
       </Testimonial>
       {/* <Testimonials /> */}

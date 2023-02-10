@@ -1,5 +1,5 @@
 import Image from 'next/image'
-
+import { Product } from '@/components/Product'
 import { Container } from '@/components/Container'
 import { SectionHeading } from '@/components/SectionHeading'
 import abstractBackgroundImage from '@/images/resources/abstract-background.png'
@@ -9,6 +9,7 @@ import videoPlayerImage from '@/images/resources/video-player.svg'
 
 const resources = [
   {
+    price: '$99 USD',
     title: 'Figma icon templates',
     description:
       'Pefectly structured templates for quickly designing new icons at dozens of common sizes.',
@@ -21,6 +22,7 @@ const resources = [
     },
   },
   {
+    price: '$99 USD',
     title: 'Weekly icon teardowns',
     description:
       'Weekly videos where we dissect and recreate beautiful icons we find on the web.',
@@ -44,6 +46,7 @@ const resources = [
     },
   },
   {
+    price: '$99 USD',
     title: 'Community of icon designers',
     description:
       "A private Discord server where you can get help and give feedback on each others' work.",
@@ -60,22 +63,16 @@ const resources = [
 export function Resources() {
   return (
     <section
-      id="services"
+      id="pricing"
       aria-labelledby="resources-title"
       className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
       <Container>
-        <SectionHeading number="2" id="resources-title">
-          Services
+        <SectionHeading number="3" id="resources-title">
+          Pricing
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Tools and resources you can use to get started even faster and
-          progress even further.
-        </p>
-        <p className="mt-4 text-lg tracking-tight text-slate-700">
-          Design assets, icon teardowns, and a community of fellow icon
-          designers where you can ask questions, get feedback, and accelerate
-          your learning.
+        Invest in your future with the Perfect Personal Satement service suite
         </p>
       </Container>
       <Container size="lg" className="mt-16">
@@ -88,12 +85,22 @@ export function Resources() {
               key={resource.title}
               className="grid auto-rows-min grid-cols-1 items-center gap-8 px-3 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-1 xl:px-12"
             >
-              <div className="relative h-48 overflow-hidden rounded-2xl shadow-lg sm:h-60 lg:h-40">
+              <Product />
+              
+              {/* <div className="relative h-48 overflow-hidden rounded-2xl shadow-lg sm:h-60 lg:h-40">
                 <resource.image />
-              </div>
+              </div> */}
               <div>
                 <h3 className="text-base font-medium tracking-tight text-slate-900">
+                <div className="flex justify-between">
+                <div className="text-left">
                   {resource.title}
+                </div>
+                <div className="text-right">
+                  {resource.price}
+                </div>
+                </div>
+                  
                 </h3>
                 <p className="mt-2 text-sm text-slate-600">
                   {resource.description}

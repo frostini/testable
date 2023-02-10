@@ -8,14 +8,14 @@ const sections = [
     id: 'getting-started',
     title: (
       <>
-        <span className="hidden lg:inline">Getting Started</span>
-        <span className="lg:hidden">Getting Started</span>
+        <span className="hidden lg:inline">Process</span>
+        <span className="lg:hidden">Process</span>
       </>
     ),
   },
   { id: 'programs', title: 'Programs' },
-  { id: 'services', title: 'Services' },
-  { id: 'examples', title: 'Examples' },
+  { id: 'pricing', title: 'Pricing' },
+  { id: 'work-sample', title: 'Work Sample' },
   { id: 'contact', title: 'Contact' },
 ]
 // { id: 'screencasts', title: 'Screencasts' },

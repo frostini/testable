@@ -18,7 +18,7 @@ export function Introduction() {
         We maintain entirely confidential services and employ only the most highly skilled professional writers. At Perfect Personal Statement, we believe in the synergism elicited by fine physicians and fine writers working together to give you an exemplary product.
         </p>
         <p className="mt-4">
-        Many institutions refer to personal statements in an effort to better appreciate an applicant's motivations and expressive ability. Unfortunately, applicants often neglect this very significant component to the admissions process. Don't make the same mistake!
+        Many institutions refer to personal statements in an effort to better appreciate an applicant&#39;s motivations and expressive ability. Unfortunately, applicants often neglect this very significant component to the admissions process. Don&#39;t make the same mistake!
         </p>
         <p className="mt-4">
         The highly trained writers and physicians at the Perfect Personal Statement help you to ensure that your statement is thoughtful, eloquent, and properly reflects your personal, professional, and academic strengths.

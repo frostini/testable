@@ -14,13 +14,13 @@ function Testimonial() {
       </div>
       <blockquote className="mt-2">
         <p className="font-display text-xl font-medium text-slate-900">
-          “Thank you, PPS. You helped me find the right words for my personal statements and helped me match into a really great residency! You even helped to fix my ERAS CV. Thank you! Thank you! Thank you!”
+        &#34;Thank you, PPS. You helped me find the right words for my personal statements and helped me match into a really great residency! You even helped to fix my ERAS CV. Thank you! Thank you! Thank you!&#34;
         </p>
       </blockquote>
       <figcaption className="mt-2 text-sm text-slate-500">
         <strong className="font-semibold text-blue-600 before:content-['—_']">
           Komal S.
-        </strong>
+        </strong><br/>
         IMG, accepted to family medicine
       </figcaption>
     </figure>

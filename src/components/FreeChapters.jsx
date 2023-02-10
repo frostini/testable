@@ -6,7 +6,7 @@ import { SectionHeading } from '@/components/SectionHeading'
 export function FreeChapters() {
   return (
     <section
-      id="examples"
+      id="work-sample"
       aria-label="Free preview"
       className="scroll-mt-14 bg-blue-600 sm:scroll-mt-32"
     >
@@ -21,12 +21,12 @@ export function FreeChapters() {
               Get the <br/> Perfect Samples
             </h2>
             <p className="mt-4 text-lg tracking-tight text-blue-200">
-              Enter your email address and we'll send you a couple of samples from past customers that obtained their <i>Perfect Outcome</i>.
+              Enter your email address and we&#39;ll send you a couple of samples from past customers that obtained their <i>Perfect Outcome</i>.
             </p>
           </div>
           <form className="lg:pl-16">
             <h3 className="text-base font-medium tracking-tight text-white">
-              Get two free chapters straight to your inbox{' '}
+              Request example personal statements{' '}
               <span aria-hidden="true">&rarr;</span>
             </h3>
             <div className="mt-4 sm:relative sm:flex sm:items-center sm:py-0.5 sm:pr-2.5">
