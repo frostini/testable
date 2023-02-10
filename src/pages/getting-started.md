@@ -1,10 +1,16 @@
----
-title: Get started with Markdoc
-description: How to get started with Markdoc
----
+# Headers
 
-# Get started with Markdoc {% #testana %}
+**Bold**
 
-- [x] hello there
+_Italic_
 
+[Links](/docs/nodes)
 
+Lists
+- Item 1
+- Item 1
+- Item 1
+
+> Quotes
+
+`Inline code`
