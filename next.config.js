@@ -1,9 +1,15 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  experimental: {
-    scrollRestoration: true,
-  },
-}
+const withMarkdoc = require('@markdoc/next.js');
 
-module.exports = nextConfig
+module.exports = withMarkdoc()({
+  pageExtensions: ['md', 'mdoc', 'js', 'jsx', 'ts', 'tsx']
+});
+
+// const nextConfig = {
+//   reactStrictMode: true,
+//   experimental: {
+//     scrollRestoration: true,
+//   },
+// }
+
+// module.exports = nextConfig

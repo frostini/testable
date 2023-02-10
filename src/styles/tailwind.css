@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+#testana {
+  color: red;
+}
 /* @import url(https://fonts.googleapis.com/css?family=Lato:900,400italic); */
 /* @import url('https://fonts.googleapis.com/css2?family=League+Script&family=Raleway:wght@300;400&display=swap'); */
 /* .frame {
