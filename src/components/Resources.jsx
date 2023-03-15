@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Product } from '@/components/Product'
+import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { SectionHeading } from '@/components/SectionHeading'
 import abstractBackgroundImage from '@/images/resources/abstract-background.png'
@@ -9,10 +10,10 @@ import videoPlayerImage from '@/images/resources/video-player.svg'
 
 const resources = [
   {
-    price: '$99 USD',
-    title: 'Figma icon templates',
+    price: '$339 USD',
+    title: 'Personal Statement Writing',
     description:
-      'Pefectly structured templates for quickly designing new icons at dozens of common sizes.',
+      'Includes one interview, initial draft, follow-up interview, and revision if desired. Each additional statement costs $159.',
     image: function FigmaImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center bg-[radial-gradient(#2C313D_35%,#000)]">
@@ -22,10 +23,10 @@ const resources = [
     },
   },
   {
-    price: '$99 USD',
-    title: 'Weekly icon teardowns',
+    price: '$465 USD',
+    title: 'Personal Statement Writing Rush Order',
     description:
-      'Weekly videos where we dissect and recreate beautiful icons we find on the web.',
+      'Includes one interview, initial draft, follow-up interview, and revision if desired. DONE IN 48 HOURS!',
     image: function VideoPlayerImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center">
@@ -46,10 +47,10 @@ const resources = [
     },
   },
   {
-    price: '$99 USD',
-    title: 'Community of icon designers',
+    price: '$289 USD',
+    title: 'Personal Statement Edit',
     description:
-      "A private Discord server where you can get help and give feedback on each others' work.",
+      "Includes one clarification interview, initial draft, follow-up interview, and revision if desired.",
     image: function DiscordImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
@@ -85,26 +86,19 @@ export function Resources() {
               key={resource.title}
               className="grid auto-rows-min grid-cols-1 items-center gap-8 px-3 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-1 xl:px-12"
             >
-              <Product />
-              
-              {/* <div className="relative h-48 overflow-hidden rounded-2xl shadow-lg sm:h-60 lg:h-40">
-                <resource.image />
-              </div> */}
+              <Product 
+                name={resource.title}
+                price={resource.price}  
+              />
               <div>
-                <h3 className="text-base font-medium tracking-tight text-slate-900">
-                <div className="flex justify-between">
-                <div className="text-left">
-                  {resource.title}
-                </div>
-                <div className="text-right">
-                  {resource.price}
-                </div>
-                </div>
-                  
-                </h3>
                 <p className="mt-2 text-sm text-slate-600">
                   {resource.description}
                 </p>
+                <div className="mt-8 flex gap-4 justify-center">
+                  <Button href="#services" color="blue">
+                    Add to Cart
+                  </Button>
+                </div>
               </div>
             </li>
           ))}
