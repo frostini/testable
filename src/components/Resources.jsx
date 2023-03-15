@@ -7,6 +7,7 @@ import abstractBackgroundImage from '@/images/resources/abstract-background.png'
 import discordImage from '@/images/resources/discord.svg'
 import figmaImage from '@/images/resources/figma.svg'
 import videoPlayerImage from '@/images/resources/video-player.svg'
+import { PayButton } from '@/components/PayButton'
 
 const resources = [
   {
@@ -60,7 +61,9 @@ const resources = [
     },
   },
 ]
-
+const amount = "2";
+const currency = "USD";
+const style = {"layout":"vertical"};
 export function Resources() {
   return (
     <section
@@ -95,9 +98,10 @@ export function Resources() {
                   {resource.description}
                 </p>
                 <div className="mt-8 flex gap-4 justify-center">
-                  <Button href="#services" color="blue">
-                    Add to Cart
-                  </Button>
+                <PayButton
+                    currency={currency}
+                    showSpinner={false}
+                />
                 </div>
               </div>
             </li>

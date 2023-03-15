@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Container } from '@/components/Container'
 import { InboxIcon, TrashIcon, UsersIcon } from '@heroicons/react/24/outline'
 import { SectionHeading } from '@/components/SectionHeading'
-import { PayButton } from './PayButton'
+
 
 const features = [
   {
@@ -71,9 +71,7 @@ const features = [
 ]
 
 export function Categories() {
-  const amount = "2";
-const currency = "USD";
-const style = {"layout":"vertical"};
+
   return (
     <section
       id="programs"
@@ -84,10 +82,6 @@ const style = {"layout":"vertical"};
         <SectionHeading number="2" id="program  s-title">
           Programs Available
         </SectionHeading>
-        <PayButton
-                    currency={currency}
-                    showSpinner={false}
-                />
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
         We write for all types of healthcare professional programs
         </p>
