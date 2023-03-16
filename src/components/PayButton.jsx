@@ -1,11 +1,17 @@
 import { useEffect } from "react";
 import { PayPalButtons, usePayPalScriptReducer } from "@paypal/react-paypal-js";
 
-const amount = "2";
-const currency = "USD";
-const style = {"layout":"vertical"};
+// const amount = "2";
+// const currency = "USD";
+// const style = {"layout":"vertical"};
 
-export const PayButton = ({ currency, showSpinner }) => {
+export const PayButton = ({ 
+  amount,
+  currency,
+  description,
+  showSpinner,
+  style
+}) => {
   // usePayPalScriptReducer can be use only inside children of PayPalScriptProviders
   // This is the main reason to wrap the PayPalButtons in a new component
   const [{ options, isPending }, dispatch] = usePayPalScriptReducer();
@@ -18,7 +24,7 @@ export const PayButton = ({ currency, showSpinner }) => {
               currency: currency,
           },
       });
-  }, [currency, showSpinner]);
+  }, [currency, showSpinner, amount]);
 
 
   return (<>
@@ -33,7 +39,8 @@ export const PayButton = ({ currency, showSpinner }) => {
                       .create({
                           purchase_units: [
                               {
-                                  amount: {
+                                description: description,  
+                                amount: {
                                       currency_code: currency,
                                       value: amount,
                                   },
@@ -47,7 +54,7 @@ export const PayButton = ({ currency, showSpinner }) => {
               }}
               onApprove={function (data, actions) {
                   return actions.order.capture().then(function () {
-                      // Your code here after capture the order
+                      console.log("success")
                   });
               }}
           />

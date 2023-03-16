@@ -11,10 +11,12 @@ import { PayButton } from '@/components/PayButton'
 
 const resources = [
   {
-    price: '$339 USD',
-    title: 'Personal Statement Writing',
+    amount: 289,
+    currency: 'USD',
+    price: '$289 USD',
+    title: 'Personal Statement Edit',
     description:
-      'Includes one interview, initial draft, follow-up interview, and revision if desired. Each additional statement costs $159.',
+      'Personal Statement Edit includes one clarification interview, initial draft, follow-up interview, and revision if desired.',
     image: function FigmaImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center bg-[radial-gradient(#2C313D_35%,#000)]">
@@ -24,10 +26,12 @@ const resources = [
     },
   },
   {
-    price: '$465 USD',
-    title: 'Personal Statement Writing Rush Order',
+    amount: 199,
+    currency: 'USD',
+    price: '$199 USD',
+    title: 'CV Rewrite and suggestion service for ERAS ©',
     description:
-      'Includes one interview, initial draft, follow-up interview, and revision if desired. DONE IN 48 HOURS!',
+      'CV Rewrite and suggestion service includes one interview and suggestions to increase success, initial draft, follow-up interview, and revision if desired.',
     image: function VideoPlayerImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center">
@@ -46,12 +50,69 @@ const resources = [
         </div>
       )
     },
-  },
-  {
-    price: '$289 USD',
-    title: 'Personal Statement Edit',
+  }, {
+    amount: 439,
+    currency: 'USD',
+    price: '$439 USD',
+    title: 'Personal Statement Writing and CV Rewrite',
     description:
-      "Includes one clarification interview, initial draft, follow-up interview, and revision if desired.",
+      "Personal Statement Writing and CV Rewrite includes one interview, initial drafts, follow-up interview, and one revision each if desired.",
+    image: function DiscordImage() {
+      return (
+        <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
+          <Image src={discordImage} alt="" unoptimized />
+        </div>
+      )
+    }
+  }, {
+    amount: 199,
+    currency: 'USD',
+    price: '$199 USD',
+    title: 'Letter of Recommendation Writing Service',
+    description:
+      "Letter of Recommendation Writing Service includes one interview, initial draft, follow-up interview, and revision if desired.",
+    image: function DiscordImage() {
+      return (
+        <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
+          <Image src={discordImage} alt="" unoptimized />
+        </div>
+      )
+    },
+  }, {
+    amount: 150,
+    currency: 'USD',
+    price: '$150 USD',
+    title: 'Letter of Intent',
+    description:
+      "Letter of Intent includes a special letter written for your residency of choice. Includes one interview, initial draft, follow-up interview, and revision if desired.",
+    image: function DiscordImage() {
+      return (
+        <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
+          <Image src={discordImage} alt="" unoptimized />
+        </div>
+      )
+    },
+  }, {
+    amount: 599,
+    currency: 'USD',
+    price: '$599 USD',
+    title: 'Personal Statement Writing, CV Rewrite, and Letter of Recommendation Writing',
+    description:
+      "Personal Statement Writing, CV Rewrite, and Letter of Recommendation Writing includes one interview, initial drafts, follow-up interview, and one revision each if desired.",
+    image: function DiscordImage() {
+      return (
+        <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
+          <Image src={discordImage} alt="" unoptimized />
+        </div>
+      )
+    }
+  }, {
+    amount: 69,
+    currency: 'USD',
+    price: '$69 USD',
+    title: 'E-mail edit (rewrite) service',
+    description:
+      "E-mail edit (rewrite) service includes rewriting an e-mail that you're sending to a residency/fellowship program. All communication is done by e-mail. Limited to 250 words or fewer.",
     image: function DiscordImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
@@ -61,9 +122,7 @@ const resources = [
     },
   },
 ]
-const amount = "2";
-const currency = "USD";
-const style = {"layout":"vertical"};
+
 export function Resources() {
   return (
     <section
@@ -99,7 +158,10 @@ export function Resources() {
                 </p>
                 <div className="mt-8 flex gap-4 justify-center">
                 <PayButton
-                    currency={currency}
+                    id={`pay-${resource.amount}`}
+                    description={resource.title}
+                    amount={resource.amount}
+                    currency={resource.currency}
                     showSpinner={false}
                 />
                 </div>
