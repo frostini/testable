@@ -1,10 +1,6 @@
 import { useEffect } from "react";
 import { PayPalButtons, usePayPalScriptReducer } from "@paypal/react-paypal-js";
 
-// const amount = "2";
-// const currency = "USD";
-// const style = {"layout":"vertical"};
-
 export const PayButton = ({ 
   amount,
   currency,
@@ -25,7 +21,6 @@ export const PayButton = ({
           },
       });
   }, [currency, showSpinner, amount]);
-
 
   return (<>
           { (showSpinner && isPending) && <div className="spinner" /> }

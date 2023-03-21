@@ -156,14 +156,20 @@ export function Resources() {
                 <p className="mt-2 text-sm text-slate-600">
                   {resource.description}
                 </p>
-                <div className="mt-8 flex gap-4 justify-center">
-                <PayButton
+                <div className="mt-8 flex gap-4 justify-center z-0">
+                  <PayButton
                     id={`pay-${resource.amount}`}
                     description={resource.title}
                     amount={resource.amount}
                     currency={resource.currency}
                     showSpinner={false}
-                />
+                    style= {{
+                      shape: 'pill',
+                      color: 'gold',
+                      layout: 'vertical',
+                      label: 'buynow'
+                    }}
+                  />
                 </div>
               </div>
             </li>

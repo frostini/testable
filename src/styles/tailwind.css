@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* HACK TO DISPLAY BUTTONS BEHIND NAVBAR NAVIGATION */
+.paypal-buttons {
+  z-index: 0;
+}
 
 #testana {
   color: red;
