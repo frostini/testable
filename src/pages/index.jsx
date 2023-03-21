@@ -1,19 +1,14 @@
 import Head from 'next/head'
-
+import { Hero } from '@/components/Hero'
+import { NavBar } from '@/components/NavBar'
+import { Introduction } from '@/components/Introduction'
+import { TableOfContents } from '@/components/TableOfContents'
+import { Categories } from '@/components/Categories'
+import { Testimonial } from '@/components/Testimonial'
+import { Resources } from '@/components/Resources'
+import { FreeChapters } from '@/components/FreeChapters'
 import { Author } from '@/components/Author'
 import { Footer } from '@/components/Footer'
-import { FreeChapters } from '@/components/FreeChapters'
-import { Hero } from '@/components/Hero'
-import { Introduction } from '@/components/Introduction'
-import { NavBar } from '@/components/NavBar'
-import { Resources } from '@/components/Resources'
-import { Screencasts } from '@/components/Screencasts'
-import { TableOfContents } from '@/components/TableOfContents'
-import { Testimonial } from '@/components/Testimonial'
-import { Testimonials } from '@/components/Testimonials'
-import { Categories } from '@/components/Categories'
-import avatarImage1 from '@/images/avatars/avatar-1.png'
-import avatarImage2 from '@/images/avatars/avatar-2.png'
 
 export default function Home() {
   return (
@@ -55,7 +50,6 @@ export default function Home() {
         </p>
       </Testimonial>
       <Resources />
-      {/* <Screencasts /> */}
       <Testimonial
         id="testimonial-from-gerardo-stark"
         author={{
@@ -79,7 +73,6 @@ export default function Home() {
         &#34;Lance with PPS is a really good listener. He has a lot of experience with personal statement materials and suggested helpful ideas that I never thought of. He helped me better understand my love of internal medicine and helped me put this love into words. Best experience!&#34;
         </p>
       </Testimonial>
-      {/* <Testimonials /> */}
       <Author />
       <Footer />
     </>
