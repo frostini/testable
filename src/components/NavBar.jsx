@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { Popover } from '@headlessui/react'
 import clsx from 'clsx'
+import { componentThemeConfig } from '@/lib'
 
 const sections = [
   {
@@ -38,7 +39,9 @@ function MenuIcon({ open, ...props }) {
   )
 }
 
-export function NavBar() {
+export function NavBar({ componentThemeColor = "blue" }) {
+  const themedConfig = componentThemeConfig[componentThemeColor]
+
   let navBarRef = useRef()
   let [activeIndex, setActiveIndex] = useState(null)
   let mobileActiveIndex = activeIndex === null ? 0 : activeIndex
@@ -96,7 +99,7 @@ export function NavBar() {
                 <>
                   <span
                     aria-hidden="true"
-                    className="font-mono text-sm text-blue-600"
+                    className={`font-mono text-sm ${themedConfig['text-color']}`}
                   >
                     {(mobileActiveIndex + 1).toString().padStart(2, '0')}
                   </span>
@@ -131,7 +134,7 @@ export function NavBar() {
                 >
                   <span
                     aria-hidden="true"
-                    className="font-mono text-sm text-blue-600"
+                    className={`font-mono text-sm ${themedConfig['text-color']}`}
                   >
                     {(sectionIndex + 1).toString().padStart(2, '0')}
                   </span>
@@ -157,8 +160,8 @@ export function NavBar() {
                 className={clsx(
                   'flex w-full flex-col items-center justify-center border-b-2 before:mb-2 before:font-mono before:text-sm before:content-[counter(section,decimal-leading-zero)]',
                   sectionIndex === activeIndex
-                    ? 'border-blue-600 bg-blue-50 text-blue-600 before:text-blue-600'
-                    : 'border-transparent before:text-slate-500 hover:bg-blue-50/40 hover:before:text-slate-900'
+                    ? `${themedConfig['border-color']} ${themedConfig['light-background-color']} ${themedConfig['text-color']} ${themedConfig['before-text-color']}`
+                    : `border-transparent before:text-slate-500 ${themedConfig['hover-background']} hover:before:text-slate-900`
                 )}
               >
                 {section.title}

@@ -11,6 +11,7 @@ import { Author } from '@/components/Author'
 import { Footer } from '@/components/Footer'
 
 export default function Home() {
+  const componentThemeColor = "blue"
   return (
     <>
       <Head>
@@ -22,9 +23,9 @@ export default function Home() {
           content="Perfect Personal Statement"
         />
       </Head>
-      <Hero componentThemeColor="blue" />
+      <Hero componentThemeColor={componentThemeColor} />
       <Introduction />
-      <NavBar />
+      <NavBar componentThemeColor={componentThemeColor} />
       <TableOfContents />
       <Testimonial
         id="testimonial-from-tommy-stroman"

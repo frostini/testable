@@ -5,17 +5,7 @@ import { GridPattern } from '@/components/GridPattern'
 import { StarRating } from '@/components/StarRating'
 import coverImage from '@/images/cover.png'
 import { Book } from '@/components/Book'
-
-const componentThemeConfig = {
-  blue: {
-    "text-color": "text-blue-600",
-    "background-color": "bg-blue-600",
-  },
-  red: {
-    "text-color": "text-red-600",
-    "background-color": "bg-red-600",
-  }
-}
+import { componentThemeConfig } from '@/lib'
 
 function Testimonial({ componentThemeColor }) {
   const themedConfig = componentThemeConfig[componentThemeColor]

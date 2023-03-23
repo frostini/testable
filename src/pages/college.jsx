@@ -10,7 +10,8 @@ import { FreeChapters } from '@/components/FreeChapters'
 import { Author } from '@/components/Author'
 import { Footer } from '@/components/Footer'
 
-export default function Home() {
+export default function College() {
+  const componentThemeColor = "red"
   return (
     <>
       <Head>
@@ -22,9 +23,9 @@ export default function Home() {
           content="Perfect Personal Statement"
         />
       </Head>
-      <Hero componentThemeColor="red" />
+      <Hero componentThemeColor={componentThemeColor} />
       <Introduction />
-      <NavBar />
+      <NavBar componentThemeColor={componentThemeColor} />
       <TableOfContents />
       <Testimonial
         id="testimonial-from-tommy-stroman"
