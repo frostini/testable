@@ -1,6 +1,7 @@
 import { Container } from '@/components/Container'
 import { Expandable } from '@/components/Expandable'
 import { SectionHeading } from '@/components/SectionHeading'
+import { componentThemeConfig } from '@/lib'
 
 const tableOfContents = {
   '1. Discovery': {
@@ -19,7 +20,9 @@ const tableOfContents = {
   },
 }
 
-export function TableOfContents() {
+export function TableOfContents({ componentThemeColor = "blue" }) {
+  const themedConfig = componentThemeConfig[componentThemeColor]
+
   return (
     <section
       id="getting-started"
@@ -27,7 +30,7 @@ export function TableOfContents() {
       className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
       <Container>
-        <SectionHeading number="1" id="table-of-contents-title">
+        <SectionHeading componentThemeColor={componentThemeColor} number="1" id="table-of-contents-title">
           Process
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
@@ -44,7 +47,7 @@ export function TableOfContents() {
                   .slice(0, isExpanded ? undefined : 2)
                   .map(([title, pages]) => (
                     <li key={title}>
-                      <h3 className="font-display text-3xl font-bold tracking-tight text-blue-600">
+                      <h3 className={`font-display text-3xl font-bold tracking-tight ${themedConfig['text-color']}`}>
                         {title}
                       </h3>
                       <ol

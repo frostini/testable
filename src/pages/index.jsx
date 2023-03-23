@@ -24,7 +24,7 @@ export default function Home() {
         />
       </Head>
       <Hero componentThemeColor={componentThemeColor} />
-      <Introduction />
+      <Introduction componentThemeColor={componentThemeColor} />
       <NavBar componentThemeColor={componentThemeColor} />
       <TableOfContents />
       <Testimonial

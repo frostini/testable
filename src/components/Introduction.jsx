@@ -1,9 +1,11 @@
 import Link from 'next/link'
-
 import { CheckIcon } from '@/components/CheckIcon'
 import { Container } from '@/components/Container'
+import { componentThemeConfig } from '@/lib'
 
-export function Introduction() {
+export function Introduction({ componentThemeColor = "blue" }) {
+  const themedConfig = componentThemeConfig[componentThemeColor]
+
   return (
     <section
       id="introduction"
@@ -32,7 +34,7 @@ export function Introduction() {
             'Rush-ordered services are available if needed',
           ].map((feature) => (
             <li key={feature} className="flex">
-              <CheckIcon className="h-8 w-8 flex-none fill-blue-500" />
+              <CheckIcon className={`h-8 w-8 flex-none ${themedConfig['fill-color']}`} />
               <span className="ml-4">{feature}</span>
             </li>
           ))}
@@ -43,7 +45,7 @@ export function Introduction() {
         <p className="mt-10">
           <Link
             href="#services"
-            className="text-base font-medium text-blue-600 hover:text-blue-800"
+            className={`text-base font-medium ${themedConfig['text-color']} ${themedConfig['dark-text-hover']}`}
           >
             View Perfect Personal Statement Services {' '}
             <span aria-hidden="true">&rarr;</span>

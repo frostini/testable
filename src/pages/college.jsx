@@ -24,9 +24,9 @@ export default function College() {
         />
       </Head>
       <Hero componentThemeColor={componentThemeColor} />
-      <Introduction />
+      <Introduction componentThemeColor={componentThemeColor} />
       <NavBar componentThemeColor={componentThemeColor} />
-      <TableOfContents />
+      <TableOfContents componentThemeColor={componentThemeColor} />
       <Testimonial
         id="testimonial-from-tommy-stroman"
         author={{
