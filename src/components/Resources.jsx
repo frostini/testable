@@ -8,6 +8,7 @@ import discordImage from '@/images/resources/discord.svg'
 import figmaImage from '@/images/resources/figma.svg'
 import videoPlayerImage from '@/images/resources/video-player.svg'
 import { PayButton } from '@/components/PayButton'
+import { componentThemeConfig } from '@/lib'
 
 const resources = [
   {
@@ -123,7 +124,8 @@ const resources = [
   },
 ]
 
-export function Resources() {
+export function Resources({componentThemeColor = "blue"}) {
+  const themedConfig = componentThemeConfig[componentThemeColor]
   return (
     <section
       id="pricing"
@@ -131,7 +133,7 @@ export function Resources() {
       className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
       <Container>
-        <SectionHeading number="3" id="resources-title">
+        <SectionHeading componentThemeColor={componentThemeColor} number="3" id="resources-title">
           Pricing
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
