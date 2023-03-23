@@ -26,7 +26,7 @@ export default function Home() {
       <Hero componentThemeColor={componentThemeColor} />
       <Introduction componentThemeColor={componentThemeColor} />
       <NavBar componentThemeColor={componentThemeColor} />
-      <TableOfContents />
+      <TableOfContents componentThemeColor={componentThemeColor} />
       <Testimonial
         id="testimonial-from-tommy-stroman"
         author={{
@@ -38,7 +38,7 @@ export default function Home() {
         &#34;Before writing my personal statement, my professional writer really got to know me over the phone and e-mail. He spent time looking at my CV/resume and learned all about me with his insightful interview questions. He helped me find the right words to express myself. I really ended up with the perfect personal statement—thanks PPS!&#34;
         </p>
       </Testimonial>
-      <Categories/>
+      <Categories componentThemeColor={componentThemeColor}/>
       <Testimonial
         id="testimonial-from-tommy-stromaan"
         author={{

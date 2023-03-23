@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Container } from '@/components/Container'
 import { InboxIcon, TrashIcon, UsersIcon } from '@heroicons/react/24/outline'
 import { SectionHeading } from '@/components/SectionHeading'
-
+import { componentThemeConfig } from '@/lib'
 
 const features = [
   {
@@ -70,7 +70,8 @@ const features = [
   },  
 ]
 
-export function Categories() {
+export function Categories({ componentThemeColor = "blue" }) {
+  const themedConfig = componentThemeConfig[componentThemeColor]
 
   return (
     <section
@@ -79,7 +80,7 @@ export function Categories() {
       className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
       <Container>
-        <SectionHeading number="2" id="program  s-title">
+        <SectionHeading componentThemeColor={componentThemeColor} number="2" id="program  s-title">
           Programs Available
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
@@ -92,7 +93,7 @@ export function Categories() {
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
             {features.map((feature) => (
               <div key={feature.name} className="flex flex-col">
-                <dt className="text-base font-semibold leading-7 text-blue-600">
+                <dt className={`text-base font-semibold leading-7 ${themedConfig['text-color']}`}>
                   {feature.name}
                 </dt>
                 <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
@@ -107,7 +108,7 @@ export function Categories() {
       <p className="mt-10">
         <Link
           href="#services"
-          className="text-base font-medium text-blue-600 hover:text-blue-800"
+          className={`text-base font-medium ${themedConfig['text-color']} ${themedConfig['dark-text-hover']}`}
         >
           View Perfect Personal Statement Pricing {' '}
           <span aria-hidden="true">&rarr;</span>
