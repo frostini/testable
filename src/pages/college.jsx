@@ -28,6 +28,7 @@ export default function College() {
       <NavBar componentThemeColor={componentThemeColor} />
       <TableOfContents componentThemeColor={componentThemeColor} />
       <Testimonial
+        componentThemeColor={componentThemeColor}
         id="testimonial-from-tommy-stroman"
         author={{
           name: 'Alyson K.',
@@ -40,6 +41,7 @@ export default function College() {
       </Testimonial>
       <Categories componentThemeColor={componentThemeColor}/>
       <Testimonial
+        componentThemeColor={componentThemeColor}
         id="testimonial-from-tommy-stromaan"
         author={{
           name: 'Alyson K.',
@@ -52,6 +54,7 @@ export default function College() {
       </Testimonial>
       <Resources />
       <Testimonial
+        componentThemeColor={componentThemeColor}
         id="testimonial-from-gerardo-stark"
         author={{
           name: 'Matt T.',
@@ -64,6 +67,7 @@ export default function College() {
       </Testimonial>
       <FreeChapters />
       <Testimonial
+        componentThemeColor={componentThemeColor}
         id="testimonial-from-gerardo-stark"
         author={{
           name: 'Matt T.',

@@ -1,10 +1,12 @@
 import Image from 'next/image'
-
+import { componentThemeConfig } from '@/lib'
 import { Container } from '@/components/Container'
 import { GridPattern } from '@/components/GridPattern'
 import { StarRating } from '@/components/StarRating'
 
-export function Testimonial({ id, author, children }) {
+export function Testimonial({ id, author, componentThemeColor = "blue", children }) {
+  const themedConfig = componentThemeConfig[componentThemeColor]
+
   return (
     <aside
       id={id}
@@ -16,7 +18,7 @@ export function Testimonial({ id, author, children }) {
       </div>
       <Container size="xs" className="relative">
         <figure>
-          <div className="flex text-blue-600  sm:justify-center">
+          <div className={`flex ${themedConfig['text-color']}  sm:justify-center`}>
             <StarRating />
           </div>
           <blockquote className="mt-10 font-display text-4xl font-medium tracking-tight text-slate-900 sm:text-center">
@@ -27,7 +29,7 @@ export function Testimonial({ id, author, children }) {
               <div className="text-base font-medium leading-6 tracking-tight text-slate-900">
                 - {author.name}
               </div>
-              <div className="mt-1 text-sm text-blue-600 ">{author.role}</div>
+              <div className={`mt-1 text-sm ${themedConfig['text-color']}`}>{author.role}</div>
             </div>
           </figcaption>
         </figure>
