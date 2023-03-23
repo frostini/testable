@@ -22,7 +22,7 @@ export default function Home() {
           content="Perfect Personal Statement"
         />
       </Head>
-      <Hero componentThemeColor="blue" />
+      <Hero componentThemeColor="red" />
       <Introduction />
       <NavBar />
       <TableOfContents />
