@@ -44,7 +44,7 @@ export function Hero({ componentThemeColor = "blue" }) {
           </div>
           <div className="relative z-10 mx-auto flex w-80 h-100 rounded-xl bg-slate-600 shadow-xl md:w-80 lg:w-auto">
             {/* <Image className="w-full" src={coverImage} alt="" priority /> */}
-            <Book title={"medicine"} className="w-full"/>
+            <Book title={"college"} className="w-full"/>
           </div>
         </div>
         <div className="relative px-4 sm:px-6 lg:col-span-7 lg:pr-0 lg:pb-14 lg:pl-16 xl:pl-20">

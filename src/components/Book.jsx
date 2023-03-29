@@ -1,6 +1,6 @@
 import { Button } from '@/components/Button'
 
-export function Book ({}) {
+export function Book ({title = "Medicine"}) {
   return (
       <div className="book box-border h-96 lg:h-160">
         <div className="flex-col justify-end h-full">
@@ -11,7 +11,7 @@ export function Book ({}) {
             <span className="font-perfect block font-extrabold">Personal</span>
             <span className="font-brand font-light block">STATEMENT</span>
             </h2>
-            <p className="mt-2 mr-4 text-white font-brand text-right">MEDICINE</p>
+            <p className="mt-2 mr-4 text-white font-brand text-right uppercase">{title}</p>
           </div>
         </div>
       </div>
