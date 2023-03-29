@@ -2,13 +2,15 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Pattern } from '@/components/Pattern'
 import { SectionHeading } from '@/components/SectionHeading'
+import { componentThemeConfig } from '@/lib'
 
-export function FreeChapters() {
+export function FreeChapters({ componentThemeColor = "blue" }) {
+const themedConfig = componentThemeConfig[componentThemeColor]
   return (
     <section
       id="work-sample"
       aria-label="Free preview"
-      className="scroll-mt-14 bg-blue-600 sm:scroll-mt-32"
+      className={`scroll-mt-14 ${themedConfig['background-color']} sm:scroll-mt-32`}
     >
       <div className="overflow-hidden lg:relative">
         <Container
@@ -20,7 +22,7 @@ export function FreeChapters() {
             <h2 className="font-display text-5xl font-extrabold tracking-tight text-white sm:w-3/4 sm:text-6xl md:w-2/3 lg:w-auto">
               Get the <br/> Perfect Samples
             </h2>
-            <p className="mt-4 text-lg tracking-tight text-blue-200">
+            <p className={`mt-4 text-lg tracking-tight ${themedConfig['light-text-color']}`}>
               Enter your email address and we&#39;ll send you a couple of samples from past customers that obtained their <i>Perfect Outcome</i>.
             </p>
           </div>
@@ -43,7 +45,7 @@ export function FreeChapters() {
               </div>
               <Button
                 type="submit"
-                color="white"
+                color="whiteRed"
                 className="mt-4 w-full sm:relative sm:z-10 sm:mt-0 sm:w-auto sm:flex-none"
               >
                 Request Free Sample
