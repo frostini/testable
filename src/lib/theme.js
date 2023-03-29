@@ -9,6 +9,8 @@ export const componentThemeConfig = {
     'light-background-color': "bg-blue-50",
     'border-color': "border-blue-600",
     'fill-color': 'fill-blue-500',
+    'darker-fill-color': 'fill-blue-600',
+    'light-fill-color': 'fill-blue-300',
     'dark-text-hover': 'hover:text-blue-800',
     'ring-color': 'ring-blue-600',
   },
@@ -22,6 +24,8 @@ export const componentThemeConfig = {
     'light-background-color': "bg-red-50",
     'border-color': "border-red-600",
     'fill-color': 'fill-red-500',
+    'darker-fill-color': 'fill-red-600',
+    'light-fill-color': 'fill-red-300',
     'dark-text-hover': 'hover:text-red-800',
     'ring-color': 'ring-red-600',
   }

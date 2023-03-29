@@ -78,7 +78,7 @@ export default function College() {
         &#34;Lance with PPS is a really good listener. He has a lot of experience with personal statement materials and suggested helpful ideas that I never thought of. He helped me better understand my love of internal medicine and helped me put this love into words. Best experience!&#34;
         </p>
       </Testimonial>
-      <Author />
+      <Author componentThemeColor={componentThemeColor}/>
       <Footer />
     </>
   )
