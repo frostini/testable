@@ -63,7 +63,7 @@ export function Hero({ componentThemeColor = "blue" }) {
               <Button href="#services" color={componentThemeColor}>
                 View Our Services
               </Button>
-              <Button href="#examples" variant="outline" color={componentThemeColor}>
+              <Button href="#examples" variant="outline" color={`${themedConfig['white-color-button']}`}>
                 Request a Work Sample
               </Button>
             </div>

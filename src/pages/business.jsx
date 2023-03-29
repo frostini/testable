@@ -10,8 +10,8 @@ import { FreeChapters } from '@/components/FreeChapters'
 import { Author } from '@/components/Author'
 import { Footer } from '@/components/Footer'
 
-export default function Home() {
-  const componentThemeColor = "gold"
+export default function College() {
+  const componentThemeColor = "green"
   return (
     <>
       <Head>

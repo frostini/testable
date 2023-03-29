@@ -11,7 +11,7 @@ import { Author } from '@/components/Author'
 import { Footer } from '@/components/Footer'
 
 export default function College() {
-  const componentThemeColor = "red"
+  const componentThemeColor = "blue"
   return (
     <>
       <Head>
