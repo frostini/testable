@@ -1,5 +1,6 @@
 export const componentThemeConfig = {
   blue: {
+    "white-color-button": "whiteBlue",
     'hover-background': "hover:bg-blue-50/40",
     'before-text-color': "before:text-blue-600",
     'text-color': "text-blue-600",
@@ -15,6 +16,7 @@ export const componentThemeConfig = {
     'ring-color': 'ring-blue-600',
   },
   red: {
+    "white-color-button": "whiteRed",
     'hover-background': "hover:bg-red-50/40",
     'before-text-color': "before:text-red-600",
     'text-color': "text-red-600",

@@ -45,7 +45,7 @@ const themedConfig = componentThemeConfig[componentThemeColor]
               </div>
               <Button
                 type="submit"
-                color="whiteRed"
+                color={`${themedConfig['white-color-button']}`}
                 className="mt-4 w-full sm:relative sm:z-10 sm:mt-0 sm:w-auto sm:flex-none"
               >
                 Request Free Sample
