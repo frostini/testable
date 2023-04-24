@@ -37,7 +37,7 @@ export function OtherServices({componentThemeColor = "blue"}) {
           Other Services
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-        Don't see what you are looking for? Maybe one of our other services can help!
+        Don&apos;t see what you are looking for? Maybe one of our other services can help!
         </p>
       </Container>
       <Container className="mt-16">
