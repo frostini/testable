@@ -8,6 +8,7 @@ import { Resources } from '@/components/Resources'
 import { Testimonial } from '@/components/Testimonial'
 import { FreeChapters } from '@/components/FreeChapters'
 import { Author } from '@/components/Author'
+import { OtherServices } from '@/components/OtherServices'
 import { Footer } from '@/components/Footer'
 
 export default function Home() {
@@ -79,6 +80,7 @@ export default function Home() {
         </p>
       </Testimonial>
       <Author componentThemeColor={componentThemeColor}/>
+      <OtherServices componentThemeColor={componentThemeColor}/>
       <Footer />
     </>
   )
