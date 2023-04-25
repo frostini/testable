@@ -5,6 +5,7 @@ import { Introduction } from '@/components/holder/blue/Introduction'
 import { TableOfContents } from '@/components/holder/blue/TableOfContents'
 import { Categories } from '@/components/holder/blue/Categories'
 import { Resources } from '@/components/holder/blue/Resources'
+import { OtherServices } from '@/components/holder/blue/OtherServices'
 import { Testimonial } from '@/components/Testimonial'
 import { FreeChapters } from '@/components/FreeChapters'
 import { Author } from '@/components/Author'
@@ -79,6 +80,7 @@ export default function College() {
         </p>
       </Testimonial>
       <Author componentThemeColor={componentThemeColor}/>
+      <OtherServices componentThemeColor={componentThemeColor}/>
       <Footer />
     </>
   )

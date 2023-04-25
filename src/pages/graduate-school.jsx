@@ -9,6 +9,7 @@ import { Testimonial } from '@/components/Testimonial'
 import { FreeChapters } from '@/components/FreeChapters'
 import { Author } from '@/components/Author'
 import { Footer } from '@/components/Footer'
+import { OtherServices } from '@/components/holder/green/OtherServices'
 
 export default function College() {
   const componentThemeColor = "green"
@@ -79,6 +80,7 @@ export default function College() {
         </p>
       </Testimonial>
       <Author componentThemeColor={componentThemeColor}/>
+      <OtherServices componentThemeColor={componentThemeColor}/>
       <Footer />
     </>
   )
