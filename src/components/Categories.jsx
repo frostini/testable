@@ -107,7 +107,7 @@ export function Categories({ componentThemeColor = "blue" }) {
     <Container size='lg'>
       <p className="mt-10">
         <Link
-          href="#services"
+          href="#pricing"
           className={`text-base font-medium ${themedConfig['text-color']} ${themedConfig['dark-text-hover']}`}
         >
           View Perfect Personal Statement Pricing {' '}

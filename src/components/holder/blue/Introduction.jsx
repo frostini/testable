@@ -14,7 +14,7 @@ export function Introduction({ componentThemeColor = "blue" }) {
     >
       <Container className="text-lg tracking-tight text-slate-700">
         <p className="font-display text-4xl font-bold tracking-tight text-slate-900">
-        The highly trained writers and editors at the Perfect Personal Statement help you to ensure that your statement is thoughtful, eloquent, and properly reflects your personal, professional, and academic strengths.
+        The highly trained writers and editors at the Perfect Personal Statement help you to ensure that your application materials are thoughtful, eloquent, and properly reflects your personal, professional, and academic strengths.
         </p>
         <p className="mt-4">
         We maintain entirely confidential services and employ only the most highly skilled professional writers. At Perfect Personal Statement, we believe in the synergism elicited by fine physicians and fine writers working together to give you an exemplary product.
@@ -22,9 +22,6 @@ export function Introduction({ componentThemeColor = "blue" }) {
         <p className="mt-4">
         Many institutions refer to personal statements in an effort to better appreciate an applicant&#39;s motivations and expressive ability. Unfortunately, applicants often neglect this very significant component to the admissions process. Don&#39;t make the same mistake!
         </p>
-        {/* <p className="mt-4">
-        The highly trained writers and editors at the Perfect Personal Statement help you to ensure that your statement is thoughtful, eloquent, and properly reflects your personal, professional, and academic strengths.
-        </p> */}
         <ul role="list" className="mt-8 space-y-3">
           {[
             'We try to offer the lowest rates in the business in order for you to receive a quality product that is both refined and affordable',

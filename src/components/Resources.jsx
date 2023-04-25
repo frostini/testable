@@ -128,7 +128,7 @@ const resources = [
     price: '$149 USD',
     title: 'Rush Order Add-on',
     description:
-    "All of our services are available with an expedited turn around of 48 hours with this Rush Order Add-on. Please note that any service you would like to add a rush order to requires the purchase of an additional Rush Order Add-on.",
+    "All of our services are available with an expedited turn around of 48 hours with this Rush Order Add-on. Please note that any service you would like to add a rush order to requires the purchase of a corresponding Rush Order Add-on.",
     image: function DiscordImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">

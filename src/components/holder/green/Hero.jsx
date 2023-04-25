@@ -44,7 +44,7 @@ export function Hero({ componentThemeColor = "blue" }) {
           </div>
           <div className="relative z-10 mx-auto flex w-80 h-100 rounded-xl bg-slate-600 shadow-xl md:w-80 lg:w-auto">
             {/* <Image className="w-full" src={coverImage} alt="" priority /> */}
-            <Book title={"business"} className="w-full"/>
+            <Book title={"graduate school"} className="w-full"/>
           </div>
         </div>
         <div className="relative px-4 sm:px-6 lg:col-span-7 lg:pr-0 lg:pb-14 lg:pl-16 xl:pl-20">
@@ -57,7 +57,7 @@ export function Hero({ componentThemeColor = "blue" }) {
               We help you make the <i>Perfect Impression</i>
             </h1>
             <p className="mt-4 text-3xl text-slate-600">
-            Experienced medical writers and physicians help you write excellent application materials for medical school or residency as well as all other types of healthcare professional programs.
+            Experienced writers and specialized editors help you write excellent application materials for graduate school.
             </p>
             <div className="mt-8 flex gap-4">
               <Button href="#pricing" color={componentThemeColor}>

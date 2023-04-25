@@ -12,12 +12,11 @@ import { componentThemeConfig } from '@/lib'
 
 const resources = [
   {
-    amount: 289,
+    amount: 379,
     currency: 'USD',
-    price: '$289 USD',
-    title: 'Personal Statement Edit',
-    description:
-      'Personal Statement Edit includes one clarification interview, initial draft, follow-up interview, and revision if desired.',
+    price: '$379 USD',
+    title: 'Law School Personal Statement or Essay',
+    description: 'Includes one interview, initial draft, follow-up interview, and revision if desired. Limited to 1200 words. Please note that law school statements can be challenging to write. We recommend reviewing our Terms of Use and Disclaimer before ordering.',
     image: function FigmaImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center bg-[radial-gradient(#2C313D_35%,#000)]">
@@ -27,37 +26,77 @@ const resources = [
     },
   },
   {
-    amount: 199,
+    amount: 329,
     currency: 'USD',
-    price: '$199 USD',
-    title: 'CV Rewrite and suggestion service for ERAS ©',
-    description:
-      'CV Rewrite and suggestion service includes one interview and suggestions to increase success, initial draft, follow-up interview, and revision if desired.',
-    image: function VideoPlayerImage() {
+    price: '$329 USD',
+    title: 'Law School Personal Statement or Essay - Rewrite',
+    description: 'Includes one interview, initial draft, follow-up interview, and revision if desired. Limited to 1200 words. Please note that law school statements can be challenging to write. We recommend reviewing our Terms of Use and Disclaimer before ordering.',
+    image: function FigmaImage() {
       return (
-        <div className="absolute inset-0 flex items-center justify-center">
-          <Image
-            className="absolute inset-0 h-full w-full object-cover"
-            src={abstractBackgroundImage}
-            alt=""
-            sizes="(min-width: 1280px) 21rem, (min-width: 1024px) 33vw, (min-width: 768px) 19rem, (min-width: 640px) 50vw, 100vw"
-          />
-          <Image
-            className="relative"
-            src={videoPlayerImage}
-            alt=""
-            unoptimized
-          />
+        <div className="absolute inset-0 flex items-center justify-center bg-[radial-gradient(#2C313D_35%,#000)]">
+          <Image src={figmaImage} alt="" unoptimized />
         </div>
       )
     },
   }, {
-    amount: 439,
+    amount: 339,
     currency: 'USD',
-    price: '$439 USD',
-    title: 'Personal Statement Writing and CV Rewrite',
+    price: '$339 USD',
+    title: 'MBA Personal Statement or Essay',
+    description: 'Includes one interview, initial draft, follow-up interview, and revision if desired. Limited to 1200 words.',
+    image: function FigmaImage() {
+      return (
+        <div className="absolute inset-0 flex items-center justify-center bg-[radial-gradient(#2C313D_35%,#000)]">
+          <Image src={figmaImage} alt="" unoptimized />
+        </div>
+      )
+    },
+  }, {
+    amount: 279,
+    currency: 'USD',
+    price: '$279 USD',
+    title: 'MBA Personal Statement or Essay - Rewrite',
+    description: 'Includes one interview, initial draft, follow-up interview, and revision if desired. Limited to 1200 words.',
+    image: function FigmaImage() {
+      return (
+        <div className="absolute inset-0 flex items-center justify-center bg-[radial-gradient(#2C313D_35%,#000)]">
+          <Image src={figmaImage} alt="" unoptimized />
+        </div>
+      )
+    },
+  }, {
+    amount: 319,
+    currency: 'USD',
+    price: '$319 USD',
+    title: 'Graduate School Personal Statement or Essay',
+    description: 'Includes one interview, initial draft, follow-up interview, and revision if desired. Limited to 1200 words.',
+    image: function FigmaImage() {
+      return (
+        <div className="absolute inset-0 flex items-center justify-center bg-[radial-gradient(#2C313D_35%,#000)]">
+          <Image src={figmaImage} alt="" unoptimized />
+        </div>
+      )
+    },
+  },  {
+    amount: 279,
+    currency: 'USD',
+    price: '$279 USD',
+    title: 'MBA Personal Statement or Essay - Rewrite',
+    description: 'Includes one interview, initial draft, follow-up interview, and revision if desired. Limited to 1200 words.',
+    image: function FigmaImage() {
+      return (
+        <div className="absolute inset-0 flex items-center justify-center bg-[radial-gradient(#2C313D_35%,#000)]">
+          <Image src={figmaImage} alt="" unoptimized />
+        </div>
+      )
+    },
+  },{
+    amount: 199,
+    currency: 'USD',
+    price: '$199 USD',
+    title: 'Resume/CV - Rewrite',
     description:
-      "Personal Statement Writing and CV Rewrite includes one interview, initial drafts, follow-up interview, and one revision each if desired.",
+    "Includes one interview, initial draft, follow-up interview, and revision if desired.",
     image: function DiscordImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
@@ -69,37 +108,9 @@ const resources = [
     amount: 199,
     currency: 'USD',
     price: '$199 USD',
-    title: 'Letter of Recommendation Writing Service',
+    title: 'Personal Statement',
     description:
-      "Letter of Recommendation Writing Service includes one interview, initial draft, follow-up interview, and revision if desired.",
-    image: function DiscordImage() {
-      return (
-        <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
-          <Image src={discordImage} alt="" unoptimized />
-        </div>
-      )
-    },
-  }, {
-    amount: 150,
-    currency: 'USD',
-    price: '$150 USD',
-    title: 'Letter of Intent',
-    description:
-      "Letter of Intent includes a special letter written for your residency of choice. Includes one interview, initial draft, follow-up interview, and revision if desired.",
-    image: function DiscordImage() {
-      return (
-        <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
-          <Image src={discordImage} alt="" unoptimized />
-        </div>
-      )
-    },
-  }, {
-    amount: 599,
-    currency: 'USD',
-    price: '$599 USD',
-    title: 'Personal Statement Writing, CV Rewrite, and Letter of Recommendation Writing',
-    description:
-      "Personal Statement Writing, CV Rewrite, and Letter of Recommendation Writing includes one interview, initial drafts, follow-up interview, and one revision each if desired.",
+    "Includes one interview, initial draft, follow-up interview, and revision if desired. Limited to 550 words. Please note that we write letters of recommendation on behalf of third parties. For example, if an employer, teacher, or professor asks you to write your own letter of recommendation that they plan to review and sign.",
     image: function DiscordImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
@@ -107,20 +118,21 @@ const resources = [
         </div>
       )
     }
-  }, {
-    amount: 69,
+  },
+  {
+    amount: 149,
     currency: 'USD',
-    price: '$69 USD',
-    title: 'E-mail edit (rewrite) service',
+    price: '$149 USD',
+    title: 'Rush Order Add-on',
     description:
-      "E-mail edit (rewrite) service includes rewriting an e-mail that you're sending to a residency/fellowship program. All communication is done by e-mail. Limited to 250 words or fewer.",
+    "All of our services are available with an expedited turn around of 48 hours with this Rush Order Add-on. Please note that any service you would like to add a rush order to requires the purchase of a corresponding Rush Order Add-on.",
     image: function DiscordImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
           <Image src={discordImage} alt="" unoptimized />
         </div>
       )
-    },
+    }
   },
 ]
 
