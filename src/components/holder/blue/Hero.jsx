@@ -57,13 +57,13 @@ export function Hero({ componentThemeColor = "blue" }) {
               We help you make the <i>Perfect Impression</i>
             </h1>
             <p className="mt-4 text-3xl text-slate-600">
-            Experienced medical writers and physicians help you write excellent application materials for medical school or residency as well as all other types of healthcare professional programs.
+            Experienced writers and specialized editors help you write excellent application materials for college or university.
             </p>
             <div className="mt-8 flex gap-4">
-              <Button href="#services" color={componentThemeColor}>
+              <Button href="#pricing" color={componentThemeColor}>
                 View Our Services
               </Button>
-              <Button href="#examples" variant="outline" color={`${themedConfig['white-color-button']}`}>
+              <Button href="#work-sample" variant="outline" color={`${themedConfig['white-color-button']}`}>
                 Request a Work Sample
               </Button>
             </div>

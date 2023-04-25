@@ -5,7 +5,7 @@ import { componentThemeConfig } from '@/lib'
 
 const tableOfContents = {
   '1. Discovery': {
-    'Within one business day of receiving your payment, we will e-mail you a list of potential interview topics and pair you with a professional writer and physician editor. We will also request any additional information that we may need from you. Your professional writer and physician editor will contact you via e-mail within 24 to 36 hours.*': 1,
+    'Within one business day of receiving your payment, we will e-mail you a list of potential interview topics and pair you with a professional writer and editor. We will also request any additional information that we may need from you. Your professional writer and editor will contact you via e-mail within 24 to 36 hours.*': 1,
     '*If you order the rush-order service, this entire process is expedited': 43
   },
   '2. Production': {
@@ -16,7 +16,7 @@ const tableOfContents = {
     'You may then request one set of focused revisions via e-mail, or your writer will solicit one set of focused revisions over the phone.': 50,
   },
   '4. Perfection': {
-    'Your writer will finalize your personal statement or other application materials, and your physician editor will check them for medical accuracy.': 82,
+    'Your writer will finalize your personal statement or other application materials, and your editor will check them for accuracy.': 82,
   },
 }
 

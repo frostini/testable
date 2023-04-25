@@ -6,68 +6,54 @@ import { componentThemeConfig } from '@/lib'
 
 const features = [
   {
-    name: 'Medical School',
+    name: 'College/University Application Essays',
     description:
       'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt.',
     href: '#',
     icon: InboxIcon,
   },
   {
-    name: 'Residency',
+    name: 'College/University Personal Statements',
     description:
       'Vero eum voluptatem aliquid nostrum voluptatem. Vitae esse natus.',
     href: '#',
     icon: UsersIcon,
   },
   {
-    name: 'Fellowship',
+    name: 'Common Application Essay Prompts',
     description:
       'Et quod quaerat dolorem quaerat architecto aliquam accusantium.',
     href: '#',
     icon: TrashIcon,
   },
   {
-    name: 'Dental School',
+    name: 'UC Freshman Personal Insight Questions',
     description:
       'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia.',
     href: '#',
     icon: InboxIcon,
   },
   {
-    name: 'Dental Residency',
+    name: 'UC Transfer Personal Insight Questions',
     description:
       'Vero eum voluptatem aliquid nostrum voluptatem. Vitae esse natus.',
     href: '#',
     icon: UsersIcon,
   },
   {
-    name: 'Physician Assistant',
+    name: 'CV/Resumes',
     description:
       'Et quod quaerat dolorem quaerat architecto aliquam accusantium.',
     href: '#',
     icon: TrashIcon,
   },  
   {
-    name: 'Nursing',
+    name: 'Letters of Recommendation',
     description:
       'Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia.',
     href: '#',
     icon: InboxIcon,
   },
-  {
-    name: 'Pharmacy',
-    description:
-      'Vero eum voluptatem aliquid nostrum voluptatem. Vitae esse natus.',
-    href: '#',
-    icon: UsersIcon,
-  },
-  {
-    name: 'Physical Therapy',
-    description:
-      'Et quod quaerat dolorem quaerat architecto aliquam accusantium.',
-    href: '#',
-    icon: TrashIcon,
-  },  
 ]
 
 export function Categories({ componentThemeColor = "blue" }) {
@@ -84,7 +70,7 @@ export function Categories({ componentThemeColor = "blue" }) {
           Programs Available
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-        We write for all types of healthcare professional programs
+        We write for all types of College and University applications including the following services:
         </p>
       </Container>
       {/* <div className="mx-auto max-w-7xl px-6 lg:px-8"> */}
